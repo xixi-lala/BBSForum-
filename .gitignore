@@ -1,0 +1,22 @@
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# 嵌入式Tomcat运行时
+tomcat.8088/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+logs/
