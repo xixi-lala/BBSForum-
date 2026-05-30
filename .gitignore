@@ -5,6 +5,9 @@ dependency-reduced-pom.xml
 # 嵌入式Tomcat运行时
 tomcat.8088/
 
+# 用户上传文件
+src/main/webapp/uploads/
+
 # IDE
 .idea/
 *.iml

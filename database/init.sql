@@ -60,6 +60,7 @@ CREATE TABLE IF NOT EXISTS posts (
     category_id INT NOT NULL COMMENT '所属板块ID',
     is_top      TINYINT DEFAULT 0 COMMENT '是否置顶 0=否 1=板块置顶 2=全局置顶',
     is_elite    TINYINT DEFAULT 0 COMMENT '是否加精 0=否 1=是',
+    ai_summary  TEXT DEFAULT NULL COMMENT 'AI生成的内容总结',
     view_count  INT DEFAULT 0 COMMENT '浏览次数',
     created_at  DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '发布时间',
     updated_at  DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
