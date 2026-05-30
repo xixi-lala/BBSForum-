@@ -57,7 +57,10 @@
                                 <c:if test="${post.isElite == 1}"><span class="inline-block px-1.5 py-px text-xs font-medium text-pink-600 bg-pink-50 border border-pink-200 rounded mr-1.5 align-middle">精华</span></c:if>
                                 <a href="${pageContext.request.contextPath}/post/detail?id=${post.id}" class="text-gray-900 hover:text-red-500 no-underline">${post.title}</a>
                             </h3>
-                            <p class="text-sm text-gray-500 leading-relaxed mb-3 line-clamp-2">${post.summary}</p>
+                            <p class="text-sm text-gray-500 leading-relaxed mb-3 line-clamp-2">
+                                <c:if test="${not empty post.aiSummary}"><span class="text-purple-500 mr-1">🤖</span></c:if>
+                                ${post.summary}
+                            </p>
                         </div>
                         <div class="flex items-center gap-4 text-xs text-gray-400 flex-wrap">
                             <span class="flex items-center gap-1">
